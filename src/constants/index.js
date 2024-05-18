@@ -13,9 +13,9 @@ const options = [
         shadowDeleteReset: 'shadow-firstTheme-deleteresetinset',
         equalShadow: 'shadow-firstTheme-equalinset',
         equalColor: 'text-white',
-        hoverNumberColor: 'sm:active:bg-[#FFFFFE]',
-        hoverDeleteResetColor: 'sm:active:bg-[#A2B2E1]',
-        hoverEqualColor: 'sm:active:bg-[#F96B5B]',
+        hoverNumberColor: 'sm:active:bg-[#FFFFFE] duration-200',
+        hoverDeleteResetColor: 'sm:active:bg-[#A2B2E1] duration-200',
+        hoverEqualColor: 'sm:active:bg-[#F96B5B] duration-200',
     },
     {
         bg: 'bg-[#E6E6E6]',
@@ -31,9 +31,9 @@ const options = [
         shadowDeleteReset: 'shadow-secondTheme-deleteresetinset',
         equalShadow: 'shadow-secondTheme-equalinset',
         equalColor: 'text-white',
-        hoverNumberColor: 'sm:active:bg-[#FFF]',
-        hoverDeleteResetColor: 'sm:active:bg-[#62B5BC]',
-        hoverEqualColor: 'sm:active:bg-[#FF8A38]',
+        hoverNumberColor: 'sm:active:bg-[#FFF] duration-200',
+        hoverDeleteResetColor: 'sm:active:bg-[#62B5BC] duration-200',
+        hoverEqualColor: 'sm:active:bg-[#FF8A38] duration-200',
     },
     {
         bg: 'bg-[#17062A]',
@@ -49,9 +49,9 @@ const options = [
         shadowDeleteReset: 'shadow-thirdTheme-deleteresetinset',
         equalShadow: 'shadow-thirdTheme-equalinset',
         equalColor: 'text-black',
-        hoverNumberColor: 'sm:active:bg-[#6C34AC]',
-        hoverDeleteResetColor: 'sm:active:bg-[#8631AF]',
-        hoverEqualColor: 'sm:active:bg-[#93FFF8]',
+        hoverNumberColor: 'sm:active:bg-[#6C34AC] duration-200',
+        hoverDeleteResetColor: 'sm:active:bg-[#8631AF] duration-200',
+        hoverEqualColor: 'sm:active:bg-[#93FFF8] duration-200',
     },
 ];
 

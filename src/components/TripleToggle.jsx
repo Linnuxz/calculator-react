@@ -1,9 +1,7 @@
 import React, { useState } from 'react';
-
+import { options } from '../constants/index';
 const TripleToggle = ({ onChange }) => {
     const [activeIndex, setActiveIndex] = useState(0);
-
-    const options = ['bg-[#3A4663]', 'bg-[#E6E6E6]', 'bg-[#17062A]'];
 
     const handleToggle = (index) => {
         setActiveIndex(index);
@@ -11,7 +9,9 @@ const TripleToggle = ({ onChange }) => {
     };
     return (
         <div className="flex items-center justify-center">
-            <div className="flex bg-[#242D44] rounded-full p-1 w-[71px] h-[26px]">
+            <div
+                className={`flex  ${options[activeIndex].toggleBg} rounded-full p-1 w-[71px] h-[26px]`}
+            >
                 {[0, 1, 2].map((index) => (
                     <button
                         key={index}
@@ -20,7 +20,9 @@ const TripleToggle = ({ onChange }) => {
                     >
                         {activeIndex === index && (
                             <div className="absolute inset-0 flex items-center justify-center">
-                                <div className="w-[16px] h-[16px] bg-[#D03F2F] rounded-full"></div>
+                                <div
+                                    className={`w-[16px] h-[16px] ${options[activeIndex].equalBg} rounded-full`}
+                                ></div>
                             </div>
                         )}
                     </button>
